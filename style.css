@@ -5,22 +5,24 @@
     scroll-behavior: smooth;
 }
 
-/* BODY */
 body {
-    background: #000;   /* Pure Black */
-    color: #fff;        /* Pure White Text */
+    background: #0a0a0a;
+    color: #ffffff;
+    background-image: radial-gradient(circle at 20% 30%, rgba(255,255,255,0.05), transparent 40%),
+                      radial-gradient(circle at 80% 70%, rgba(255,255,255,0.05), transparent 40%);
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
+
 header {
-    background: #111;   /* Slightly lighter black */
+    background: rgba(15, 15, 15, 0.9);
     padding: 15px 50px;
     position: sticky;
     top: 0;
-    border-bottom: 1px solid #222;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
-/* NAVIGATION */
 nav {
     display: flex;
     justify-content: space-between;
@@ -29,61 +31,78 @@ nav {
 
 nav ul {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     list-style: none;
 }
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     font-weight: 500;
     transition: 0.3s ease;
 }
 
 nav a:hover {
-    color: #bbb;
+    color: #aaaaaa;
 }
 
-/* HERO */
+/* ================= HERO ================= */
+
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 120px 20px;
 }
 
 .profile-img {
     width: 180px;
     border-radius: 50%;
     margin-bottom: 20px;
-    box-shadow: 0 0 40px rgba(255, 255, 255, 0.15);
-    border: 2px solid #333;
+    box-shadow: 0 0 40px rgba(255,255,255,0.15);
+    border: 2px solid rgba(255,255,255,0.1);
 }
 
-/* HEADINGS */
+.hero h1 {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #bbbbbb;
+    margin-top: 10px;
+}
+
+/* ================= SECTION TITLE ================= */
+
 h2 {
     text-align: center;
-    margin: 60px 0 20px;
-    font-size: 32px;
+    margin: 80px 0 30px;
+    font-size: 34px;
+    font-weight: 600;
     letter-spacing: 1px;
 }
 
-/* CARDS */
+/* ================= CARD ================= */
+
 .card {
-    background: #111;
+    background: #111111;
     margin: 20px auto;
-    padding: 25px;
+    padding: 30px;
     width: 80%;
     border-radius: 15px;
-    border: 1px solid #222;
-    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.05);
-    transition: 0.4s ease;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    transition: all 0.4s ease;
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.1);
+    transform: translateY(-10px);
+    border: 1px solid rgba(255,255,255,0.2);
 }
 
-/* SKILLS */
+/* ================= SKILLS ================= */
+
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
@@ -92,50 +111,57 @@ h2 {
 }
 
 .skills-grid span {
-    background: #fff;
-    padding: 10px 20px;
-    border-radius: 20px;
-    color: #000;
-    font-weight: 500;
+    background: #1a1a1a;
+    padding: 10px 22px;
+    border-radius: 25px;
+    color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
 }
 
-/* BUTTONS */
+.skills-grid span:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+/* ================= BUTTONS ================= */
+
 .btn, .btn-outline {
-    padding: 12px 25px;
-    margin: 10px;
-    border-radius: 25px;
+    padding: 12px 28px;
+    margin: 15px;
+    border-radius: 30px;
     text-decoration: none;
     display: inline-block;
+    font-weight: 500;
     transition: 0.3s ease;
 }
 
 .btn {
-    background: #fff;
-    color: #000;
-    font-weight: 600;
+    background: #ffffff;
+    color: #000000;
 }
 
 .btn:hover {
-    background: #ddd;
+    background: #cccccc;
 }
 
 .btn-outline {
-    border: 2px solid #fff;
-    color: #fff;
+    border: 1px solid #ffffff;
+    color: #ffffff;
 }
 
 .btn-outline:hover {
-    background: #fff;
-    color: #000;
+    background: #ffffff;
+    color: #000000;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
+
 footer {
     text-align: center;
     padding: 25px;
-    background: #111;
-    color: #aaa;
-    margin-top: 50px;
-    border-top: 1px solid #222;
+    background: #0d0d0d;
+    color: #888888;
+    margin-top: 80px;
+    border-top: 1px solid rgba(255,255,255,0.08);
 }
-
