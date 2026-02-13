@@ -5,18 +5,22 @@
     scroll-behavior: smooth;
 }
 
+/* BODY */
 body {
-    background: #ffe6f2;
-    color: #333;
+    background: #000;   /* Pure Black */
+    color: #fff;        /* Pure White Text */
 }
 
+/* HEADER */
 header {
-    background: #ffb6d9;
+    background: #111;   /* Slightly lighter black */
     padding: 15px 50px;
     position: sticky;
     top: 0;
+    border-bottom: 1px solid #222;
 }
 
+/* NAVIGATION */
 nav {
     display: flex;
     justify-content: space-between;
@@ -31,42 +35,55 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: #fff;
     font-weight: 500;
+    transition: 0.3s ease;
 }
 
+nav a:hover {
+    color: #bbb;
+}
+
+/* HERO */
 .hero {
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
 }
 
 .profile-img {
     width: 180px;
     border-radius: 50%;
     margin-bottom: 20px;
-    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.15);
+    border: 2px solid #333;
 }
 
+/* HEADINGS */
 h2 {
     text-align: center;
     margin: 60px 0 20px;
     font-size: 32px;
+    letter-spacing: 1px;
 }
 
+/* CARDS */
 .card {
-    background: white;
+    background: #111;
     margin: 20px auto;
     padding: 25px;
     width: 80%;
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(255, 105, 180, 0.2);
-    transition: transform 0.3s;
+    border: 1px solid #222;
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.05);
+    transition: 0.4s ease;
 }
 
 .card:hover {
     transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.1);
 }
 
+/* SKILLS */
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
@@ -75,34 +92,50 @@ h2 {
 }
 
 .skills-grid span {
-    background: #ffb6d9;
+    background: #fff;
     padding: 10px 20px;
     border-radius: 20px;
-    color: white;
+    color: #000;
+    font-weight: 500;
 }
 
+/* BUTTONS */
 .btn, .btn-outline {
-    padding: 10px 20px;
+    padding: 12px 25px;
     margin: 10px;
     border-radius: 25px;
     text-decoration: none;
     display: inline-block;
+    transition: 0.3s ease;
 }
 
 .btn {
-    background: #ff69b7;
-    color: rgb(255, 255, 255);
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #ddd;
 }
 
 .btn-outline {
-    border: 2px solid #ff69b4;
-    color: #ff69b4;
+    border: 2px solid #fff;
+    color: #fff;
 }
 
+.btn-outline:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* FOOTER */
 footer {
     text-align: center;
-    padding: 20px;
-    background: #ffb6d9;
-    color: white;
+    padding: 25px;
+    background: #111;
+    color: #aaa;
     margin-top: 50px;
+    border-top: 1px solid #222;
 }
+
